@@ -162,9 +162,3 @@ ffmpeg -y -i out/video.mp4 \
   -vf "fps=15,scale=960:-1:flags=lanczos,split[s0][s1];[s0]palettegen=max_colors=128[p];[s1][p]paletteuse=dither=bayer:bayer_scale=3" \
   out/video.gif
 ```
-
-## Credits
-
-- Built on [Remotion](https://www.remotion.dev) — programmatic video in React. Note that Remotion is free for individuals and organizations up to 3 people, but requires a [company license](https://www.remotion.dev/docs/license) for larger teams.
-- Workflow distilled from real product launches at [Every](https://every.to).
-- Research draws from [a16z Speedrun](https://a16z.com/speedrun/) on viral launch videos.
