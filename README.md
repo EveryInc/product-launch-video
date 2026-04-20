@@ -41,10 +41,6 @@ Or clone it and point Claude Code at the skill directory directly.
 
 Remotion installs as a dependency via `npm install` — no global install needed.
 
-### A note on Remotion licensing
-
-[Remotion](https://www.remotion.dev) is free for individuals and organizations with up to 3 employees. Larger companies need a [company license](https://www.remotion.dev/docs/license) from Remotion before using it commercially. This repo's MIT license covers the skill workflow and scaffold code only — Remotion itself is governed by its own license.
-
 ## Usage
 
 Once installed, invoke the skill in Claude Code:
@@ -84,13 +80,3 @@ Every run produces:
 - **Storyboard first, code second.** The most expensive mistake is building 8 scenes you have to rewrite.
 - **Real UI copy only.** Screenshot the actual product and mirror what's there. Invented labels are the #1 tell of a video that feels fake.
 - **Multi-agent review catches what you stop seeing.** After 50 renders, you lose the ability to see the video. Four parallel critics don't have that problem.
-
-## Credits
-
-- Built on [Remotion](https://www.remotion.dev) — programmatic video in React
-- Workflow distilled from real product launches at [Every](https://every.to)
-- Research draws from [a16z Speedrun](https://a16z.com/speedrun/) on viral launch videos
-
-## License
-
-MIT
