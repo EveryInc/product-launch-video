@@ -1,0 +1,29 @@
+{
+  "name": "product-launch-video",
+  "version": "0.1.0",
+  "description": "Claude Code skill + Remotion scaffold for building product launch videos",
+  "private": true,
+  "scripts": {
+    "studio": "remotion studio",
+    "render": "remotion render",
+    "still": "remotion still"
+  },
+  "dependencies": {
+    "@remotion/cli": "^4.0.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "remotion": "^4.0.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.12",
+    "typescript": "^5.6.3"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/EveryInc/product-launch-video.git"
+  },
+  "license": "MIT"
+}
