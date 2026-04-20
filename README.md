@@ -26,12 +26,20 @@ cd product-launch-video
 
 # Install dependencies (includes Remotion)
 npm install
-
-# Install as a Claude Code skill
-claude skill install .
 ```
 
-Or clone it and point Claude Code at the skill directory directly.
+The skill auto-loads for Claude Code because `SKILL.md` lives at `.claude/skills/product-launch-video/SKILL.md` inside the repo. Launch Claude Code from the cloned directory and it'll be available as `/product-launch-video`.
+
+### Use the skill across all your projects
+
+To make the skill available globally (not just in the cloned directory), symlink it into your user-level Claude Code skills folder:
+
+```bash
+mkdir -p ~/.claude/skills
+ln -s "$(pwd)/.claude/skills/product-launch-video" ~/.claude/skills/product-launch-video
+```
+
+You'll still need to `cd` into the cloned repo to run the Remotion scaffold, but the skill itself will be invocable from anywhere.
 
 ## Prerequisites
 
@@ -56,12 +64,16 @@ Claude will walk through the workflow, ask for missing inputs (brand tokens, ton
 
 ```
 product-launch-video/
-├── SKILL.md              # The workflow Claude Code reads
+├── .claude/skills/product-launch-video/
+│   └── SKILL.md          # The workflow Claude Code reads (auto-discovered)
+├── SKILL.md              # Symlink to the above (for GitHub preview)
 ├── README.md             # This file
 ├── package.json          # Remotion deps
+├── remotion.config.ts    # Render defaults (h264, crf 18)
 ├── src/
+│   ├── index.ts          # Remotion entry point
 │   ├── Root.tsx          # Composition registry
-│   └── Scene.tsx         # Starter scene
+│   └── LaunchVideo.tsx   # Starter scene — replace with your own
 ├── public/
 │   └── fonts/            # Drop your fonts here
 └── out/                  # Rendered videos (gitignored)
