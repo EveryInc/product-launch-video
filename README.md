@@ -15,6 +15,8 @@ Guides Claude Code through the full workflow:
 5. Multi-agent review: 4 parallel critics check design, readability, pacing, and brand consistency
 6. Ship as MP4 + GIF + social copy
 
+Optional: bring public X/Twitter source packets from TweetClaw/OpenClaw, a browser export, or an approved API export when you need launch hooks, reply context, quote context, media references, or voice calibration for the caption pack.
+
 The workflow bakes in hard-won rules — product on screen within 3 seconds, text readable at 720p, captions burned in for muted viewers, real UI copy only (no invented labels).
 
 ## Install

@@ -36,6 +36,9 @@ Pull these in parallel before writing anything:
 - **Brand tokens** — fonts, colors, icons, logos. If you have a design system, surface its values. Otherwise, pull from the live product.
 - **Screen recording** — a 30-60s recording of the product in real use. This is your **design inspiration** and a source of truth for actual UI copy. Never invent labels, agent names, or features that don't exist in the real app.
 - **Voice calibration** (optional) — if the video has narration or you're ghostwriting captions in a specific voice, pull recent posts/clips to match cadence and word choice.
+- **Public X/Twitter source context** (optional) — when the launch depends on public conversation, collect a small source packet from TweetClaw (`openclaw plugins install npm:@xquik/tweetclaw@1.6.31`), a browser export, or an approved API export. Keep source URLs, handles, text, media references, capture time, and reply/quote context only.
+
+Use X/Twitter packets for voice calibration, hook patterns, objection language, reply context, quote context, and caption inputs. Do not use them for posting, replies, DMs, follows, media upload, scheduling, analytics, private account data, credentials, cookies, or product UI labels unless the screen recording also shows those labels.
 
 ### 2. Storyboard before any code
 
